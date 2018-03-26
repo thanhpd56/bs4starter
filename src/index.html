@@ -11,7 +11,7 @@
 
 <body>
 <!--Navbar-->
-<nav class="navbar navbar-expand-md navbar-light fixed-top py-4">
+<nav class="navbar navbar-expand-md navbar-light fixed-top py-4" id="home">
     <div class="container">
         <div class="navbar-brand">
             <img src="img/mlogo.png" width="50" height="50">
@@ -21,10 +21,10 @@
                 class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link">Home</a></li>
-                <li class="nav-item"><a class="nav-link">About</a></li>
-                <li class="nav-item"><a class="nav-link">Meet The Authors</a></li>
-                <li class="nav-item"><a class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="#showcase" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#meetAuthors" class="nav-link">Meet The Authors</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </div>
 
@@ -100,7 +100,7 @@
     </div>
 </section>
 
-<section>
+<section id="about">
     <div class="container">
         <div class="row">
             <div class="col text-center">
@@ -194,7 +194,7 @@
                 <div class="card">
                     <div class="card-body">
                         <img class="img-fluid rounded-circle w-50 mb-3" src="img/person1.jpg">
-                        <h3 >Susan Williams</h3>
+                        <h3>Susan Williams</h3>
                         <h5 class="text-muted">Lead Writer</h5>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae molestiae alias
@@ -218,7 +218,7 @@
                 <div class="card">
                     <div class="card-body">
                         <img class="img-fluid rounded-circle w-50 mb-3" src="img/person2.jpg">
-                        <h3 >Grace Smith</h3>
+                        <h3>Grace Smith</h3>
                         <h5 class="text-muted">Co-Writer</h5>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae molestiae alias
@@ -242,7 +242,7 @@
                 <div class="card">
                     <div class="card-body">
                         <img class="img-fluid rounded-circle w-50 mb-3" src="img/person3.jpg">
-                        <h3 >John Doe</h3>
+                        <h3>John Doe</h3>
                         <h5 class="text-muted">Editor</h5>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae molestiae alias
@@ -266,7 +266,7 @@
                 <div class="card">
                     <div class="card-body">
                         <img class="img-fluid rounded-circle w-50 mb-3" src="img/person4.jpg">
-                        <h3 >Kevin Swanson</h3>
+                        <h3>Kevin Swanson</h3>
                         <h5 class="text-muted">Designer</h5>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae molestiae alias
@@ -291,8 +291,55 @@
     </div>
 </section>
 
+<section id="contact" class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <h3>Get In Touch</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, et.</p>
+                <form>
+                    <div class="form-group">
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                            <input class="form-control form-control-lg" placeholder="Name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon"><i class="fa fa-inbox"></i></span>
+                            <input class="form-control form-control-lg" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon"><i class="fa fa-pencil"></i></span>
+                            <textarea class="form-control form-control-lg" placeholder="Message"></textarea>
+                        </div>
+                    </div>
+                    <input type="submit" class="btn btn-primary btn-block btn-lg" value="Submit">
+
+
+                </form>
+            </div>
+            <div class="col-md-3 align-self-center">
+                <img src="img/mlogo.png" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+<footer id="main-footer" class="bg-primary py-5">
+    <div class="container">
+        <div class="row text-center text-light">
+            <div class="col-md-6 ml-auto">
+                <p class="lead">Copyright © 2017</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
 <script src="js/jquery.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/navbar-fixed.js"></script>
 </body>
 </html>
