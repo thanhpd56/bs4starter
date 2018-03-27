@@ -44,8 +44,81 @@
         </div>
     </div>
 </nav>
+<header class="bg-primary text-white py-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1><i class="fa fa-gear px-2"></i>Dashboard</h1>
+            </div>
+        </div>
+    </div>
+</header>
+<section id="actions" class=" py-4 mb-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <a href="#" class="btn btn-primary btn-block" data-toggle="modal" data-target="#addPostModal"><i
+                        class="fa fa-plus"></i> Add Post</a>
+            </div>
+            <div class="col-md-3">
+                <a href="#" class="btn btn-success btn-block" data-toggle="modal" data-target="#addCategoryModal"><i
+                        class="fa fa-plus"></i> Add Category</a>
+            </div>
+            <div class="col-md-3">
+                <a href="#" class="btn btn-warning btn-block" data-toggle="modal" data-target="#addUserModal"><i
+                        class="fa fa-plus"></i> Add User</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="modal fade" id="addPostModal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header text-white bg-primary">
+                <h5 class="modal-title">Add Post</h5>
+                <button class="close ml-auto" data-dismiss="modal" ><span>&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label class="form-control-label">Title</label>
+                        <input class="form-control" type="text" title="title">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-control-label">Category</label>
+                        <select class="form-control">
+                            <option>Web Development</option>
+                            <option>Mobile Development</option>
+                            <option>AI Development</option>
+                            <option>Other Development</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-control-label">Image Upload</label>
+                        <input class="form-control-file" type="file">
+                        <small class="form-text text-muted">Max size 3mb</small>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-control-label">Body</label>
+                        <textarea name="editor1" class="form-control"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer text-right">
+                <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button class="btn btn-primary" data-dismiss="modal">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
 <script src="js/jquery.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="https://cdn.ckeditor.com/4.9.1/standard/ckeditor.js"></script>
+<script>
+    CKEDITOR.replace( 'editor1' );
+</script>
 </body>
 </html>
