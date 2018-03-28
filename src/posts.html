@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Posts</title>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
+    <div class="container">
+        <div class="navbar-brand">Blogen</div>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a href="index.html" class="nav-link">Dashboard</a></li>
+                <li class="nav-item active"><a href="posts.html" class="nav-link">Posts</a></li>
+                <li class="nav-item"><a href="categories.html" class="nav-link">Categories</a></li>
+                <li class="nav-item"><a href="users.html" class="nav-link">Users</a></li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown mr-3">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                        <i class="fa fa-user"></i> Welcome Thanh
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="profile.html" class="dropdown-item">
+                            <i class="fa fa-user-circle">Profile</i>
+                        </a>
+                        <a href="setting.html" class="dropdown-item">
+                            <i class="fa fa-gear">Setting</i>
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link"><i class="fa fa-sign-out"></i>Logout</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+<header class="bg-primary text-white py-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1><i class="fa fa-gear px-2"></i>Posts</h1>
+            </div>
+        </div>
+    </div>
+</header>
+<section id="search" class=" py-4 mb-4 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 ml-auto">
+                <div class="input-group">
+                    <input class="form-control" type="text" placeholder="Search">
+                    <span class="input-group-btn"><button class="btn btn-primary ">Search</button></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>s
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 my-2">
+                <div class="card">
+                    <div class="card-header bg-light">
+                        <h5>Latest Posts</h5>
+                    </div>
+                    <table class="table table-striped">
+                        <thead class="thead-inverse">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Title</th>
+                            <th scope="col">Category</th>
+                            <th scope="col">Date Posted</th>
+                            <th scope="col"></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Post One</td>
+                            <td>Web Development</td>
+                            <td>July 12, 2017</td>
+                            <td><a href="details.html" class="btn btn-secondary"><i
+                                    class="fa fa-angle-double-right"></i> Details</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Post Two</td>
+                            <td>Web Development</td>
+                            <td>July 12, 2017</td>
+                            <td><a href="details.html" class="btn btn-secondary"><i
+                                    class="fa fa-angle-double-right"></i> Details</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Post Three</td>
+                            <td>Web Development</td>
+                            <td>July 12, 2017</td>
+                            <td><a href="details.html" class="btn btn-secondary"><i
+                                    class="fa fa-angle-double-right"></i> Details</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Post Four</td>
+                            <td>Web Development</td>
+                            <td>July 12, 2017</td>
+                            <td><a href="details.html" class="btn btn-secondary"><i
+                                    class="fa fa-angle-double-right"></i> Details</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Post Five</td>
+                            <td>Web Development</td>
+                            <td>July 12, 2017</td>
+                            <td><a href="details.html" class="btn btn-secondary"><i
+                                    class="fa fa-angle-double-right"></i> Details</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Post Six</td>
+                            <td>Web Development</td>
+                            <td>July 12, 2017</td>
+                            <td><a href="details.html" class="btn btn-secondary"><i
+                                    class="fa fa-angle-double-right"></i> Details</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="nav ml-4">
+                        <ul class="pagination">
+                            <li class="page-item"><a href="#" class="page-link disabled">Previous</a></li>
+                            <li class="page-item active"><a href="#" class="page-link">1</a></li>
+                            <li class="page-item"><a href="#" class="page-link">2</a></li>
+                            <li class="page-item"><a href="#" class="page-link">3</a></li>
+                            <li class="page-item"><a href="#" class="page-link">Next</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="text-white bg-dark py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <p class="lead">Copyright © 2017 Blogen</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
