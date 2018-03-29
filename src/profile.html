@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Setting</title>
+    <title>Profile</title>
 </head>
 
 <body>
@@ -48,7 +48,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <h1><i class="fa fa-gear px-2"></i>Setting</h1>
+                <h1><i class="fa fa-user px-2"></i>Edit profile</h1>
             </div>
         </div>
     </div>
@@ -60,52 +60,51 @@
                 <div class="btn btn-light btn-block"><i class="fa fa-arrow-left"></i> Back to dashboard</div>
             </div>
             <div class="col-md-3">
-                <div class="btn btn-success btn-block"><i class="fa fa-check"></i> Save changes</div>
+                <div class="btn btn-success btn-block" data-toggle="modal" data-target="#changePasswordModal"><i class="fa fa-lock"></i> Change password</div>
+            </div>
+            <div class="col-md-3">
+                <div class="btn btn-danger btn-block"><i class="fa fa-remove"> Delete account</i></div>
             </div>
         </div>
     </div>
 </section>
-<section>
+<section class="mb-2">
     <div class="container">
         <div class="row">
-            <div class="col-md-12 my-2">
+            <div class="col-md-9 my-2">
                 <div class="card">
                     <div class="card-header bg-light">
-                        <h5>Edit settings</h5>
+                        <h5>Edit profile</h5>
                     </div>
                     <div class="card-body">
                         <form>
-                            <fieldset class="form-group">
-                                <legend>Allow users registration</legend>
-                                <div class="form-check">
-                                    <label class="form-check-label">
-                                        <input type="radio" class="form-check-input" value="yes" checked> Yes
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <label class="form-check-label">
-                                        <input type="radio" class="form-check-input" value="no"> No
-                                    </label>
-                                </div>
-                            </fieldset>
-                            <fieldset class="form-group">
-                                <legend>Home page format</legend>
-                                <div class="form-check">
-                                    <label class="form-check-label">
-                                        <input type="radio" checked value="index" class="form-check-input"> Index
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <label class="form-check-label">
-                                        <input class="form-check-input" type="radio" value="singlePage"> Single Page
-                                    </label>
-                                </div>
-                            </fieldset>
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input class="form-control" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input class="form-control" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label>Bio</label>
+                                <textarea class="form-control" name="editor1">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur vel aliquam a commodi eligendi, esse quos perspiciatis, quas aliquid voluptates iure. Voluptatibus nisi iste voluptatum maxime dicta quisquam, nihil id!
+                                </textarea>
+                            </div>
+
+
                         </form>
                     </div>
 
                 </div>
 
+            </div>
+            <div class="col-md-3">
+                <h1>Your Avatar</h1>
+                <img class="img-fluid d-block mb-2" src="img/avatar.png">
+                <button class="btn btn-primary btn-block">Edit image</button>
+                <button class="btn btn-danger btn-block">Delete image</button>
             </div>
         </div>
     </div>
@@ -120,8 +119,39 @@
     </div>
 </footer>
 
+<div class="modal show" id="changePasswordModal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title">Change password</h5>
+                <button class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input class="form-control" type="password">
+                    </div>
+                    <div class="form-group">
+                        <label>Confirm Password</label>
+                        <input class="form-control" type="password">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer text-right">
+                <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button class="btn btn-primary" data-dismiss="modal">Update password</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script src="js/jquery.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="https://cdn.ckeditor.com/4.9.1/standard/ckeditor.js"></script>
+<script>
+    CKEDITOR.replace('editor1');
+</script>
 </body>
 </html>
