@@ -1,4 +1,5 @@
 // Main Sass File
+$big-icon-size: 50px;
 .navbar {
   .nav-link {
     font-size: 14px;
@@ -33,7 +34,7 @@
 
 #home-icons {
   .fa {
-    font-size: 50px;
+    font-size: $big-icon-size;
   }
 }
 
@@ -59,7 +60,7 @@
   text-align: center;
   color: white;
   .fa{
-    font-size: 50px;
+    font-size: $big-icon-size;
     color: white;
   }
 }
@@ -75,5 +76,11 @@
 #about{
   .about-img{
     margin-top: -40px;
+  }
+}
+
+#icon-boxes{
+  .fa{
+    font-size: $big-icon-size;
   }
 }
