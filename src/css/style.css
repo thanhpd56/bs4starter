@@ -50,3 +50,9 @@
 
 #main-footer {
   background: #000; }
+
+#page-header {
+  background: url("../img/image1.jpg") fixed; }
+
+#about .about-img {
+  margin-top: -40px; }
