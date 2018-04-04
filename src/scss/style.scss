@@ -59,28 +59,41 @@ $big-icon-size: 50px;
   background: url("../img/media.jpg") no-repeat fixed;
   text-align: center;
   color: white;
-  .fa{
+  .fa {
     font-size: $big-icon-size;
     color: white;
   }
 }
 
-#main-footer{
+#main-footer {
   background: #000;
 }
 
-#page-header{
+#page-header {
   background: url("../img/image1.jpg") fixed;
 }
 
-#about{
-  .about-img{
+#about {
+  .about-img {
     margin-top: -40px;
   }
 }
 
-#icon-boxes{
-  .fa{
+#icon-boxes {
+  .fa {
     font-size: $big-icon-size;
+  }
+}
+
+#faq {
+
+  .card {
+    border: #444;
+    a {
+      text-decoration: none;
+    }
+  }
+  .card-body, .card-header{
+    background: #333;
   }
 }
