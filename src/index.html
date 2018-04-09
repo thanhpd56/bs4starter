@@ -10,9 +10,8 @@
 </head>
 
 <body>
-
-<section id="main-header" class="text-white">
-    <div class="container">
+<div class="container">
+    <header id="main-header" class="text-white">
         <div class="row no-gutters">
             <div class="col-lg-4 col-md-5 no-gutters px-0">
                 <img src="img/person1.jpg" class="img-fluid">
@@ -30,16 +29,58 @@
                         <h6>Experienced Full Stack Web Developer</h6>
                     </div>
                     <div class="d-flex flex-row justify-content-between align-content-stretch text-center">
-                        <div class="port-item bg-primary px-4 py-5"><i class="fa fa-home d-block"></i>Home</div>
-                        <div class="port-item bg-success px-4 py-5"><i class="fa fa-graduation-cap d-block"></i>Resume</div>
+                        <div class="port-item bg-primary px-4 py-5" data-toggle="collapse" data-target="#home"><i
+                                class="fa fa-home d-block"></i>Home
+                        </div>
+                        <div class="port-item bg-success px-4 py-5"><i class="fa fa-graduation-cap d-block"></i>Resume
+                        </div>
                         <div class="port-item bg-warning px-4 py-5"><i class="fa fa-folder-open d-block"></i>Work</div>
                         <div class="port-item bg-danger px-4 py-5"><i class="fa fa-envelope d-block"></i>Contact</div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </header>
+    <section id="home" class="collapse show">
+        <div class="card text-white bg-primary py-5">
+            <div class="card-body">
+                <h4 class="card-title">Welcome to my page</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, quia.
+                </p>
+            </div>
+        </div>
+        <div class="card card-body">
+            <h4>My Skills</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum nulla et, modi harum hic deserunt.
+            </p>
+            <hr>
+            <h4>HTML</h4>
+            <div class="progress mb-3">
+                <div class="progress-bar bg-success" style="width: 100%"></div>
+            </div>
+            <h4>CSS</h4>
+            <div class="progress mb-3">
+                <div class="progress-bar bg-success" style="width: 100%"></div>
+            </div>
+            <h4>Java</h4>
+            <div class="progress mb-3">
+                <div class="progress-bar bg-success" style="width: 80%"></div>
+            </div>
+            <h4>Python</h4>
+            <div class="progress mb-3">
+                <div class="progress-bar bg-success" style="width: 70%"></div>
+            </div>
+        </div>
+
+    </section>
+    <footer id="footer" class="bg-dark p-5">
+        <div class="row">
+            <div class="col text-center text-md-left">
+                <button class="btn btn-outline-light btn-sm"><i class="fa fa-cloud-download"></i> Download Resume</button>
+            </div>
+        </div>
+    </footer>
+</div>
 <script src="js/jquery.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
